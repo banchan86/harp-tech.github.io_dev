@@ -1,12 +1,6 @@
----
-uid: about
----
+# Software Installation
 
-# What is Harp
-
-All [Harp Devices](./whoami/whoami.md) implement the [Harp Protocol](./protocol/BinaryProtocol-8bit.md) to communicate with an host PC. The `Bonsai.Harp` library provides an implementation of the Harp protocol that can be used to interface with any Harp device.
-
-## How to install
+All [Harp Devices](../protocol/whoami.md) implement the [Harp Protocol](../protocol/BinaryProtocol-8bit.md) to communicate with an host PC. The `Bonsai.Harp` library provides an implementation of the Harp protocol that can be used to interface with any Harp device. To get started: 
 
 1. [Install Bonsai](https://bonsai-rx.org)
 2. [Install FTDI D2XX Drivers](https://ftdichip.com/wp-content/uploads/2021/08/CDM212364_Setup.zip)
@@ -19,9 +13,3 @@ A high-level interface will usually be available for the specific Harp device yo
 <p><img alt="Installing a Harp device package" src="~/images/behavior-package.png" style="max-height:450px;object-fit:contain" /></p>
 
 The device nodes should now be available in the Bonsai Toolbox and you can start using them in your workflows. See [Operators](./articles/operators.md) for examples of how to manipulate and control Harp devices.
-
-## Next Steps
-
-- [Logging](./articles/logging.md)
-- [Firmware](./articles/firmware.md)
-- [Data Interface](./articles/python.md)
