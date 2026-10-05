@@ -1,7 +1,5 @@
 - name: Overview
-- href: protocol.md
-- href: interface.md
-- href: hardware-templates.md
+  href: ecosystem.md
 - name: Protocol
 - name: Binary Protocol
   href: ../protocol/BinaryProtocol-8bit.md
@@ -9,15 +7,4 @@
   href: ../protocol/Device.md
 - name: Synchronization Clock
   href: ../protocol/SynchronizationClock.md
-- name: Control Interface
-- href: operators.md
-- href: logging.md
-- href: message-manipulation.md
-- name: Data Interface
-- name: Python
-  href: python.md
-- name: Hardware
-- name: Core Templates
-  href: hardware-cores.md
-- name: Registered Devices
-  href: ~/protocol/whoami.md
+- name: Cores

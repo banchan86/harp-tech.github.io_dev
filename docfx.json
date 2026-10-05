@@ -35,6 +35,10 @@
           "tutorials/**.md",
           "tutorials/toc.yml",
           "protocol/**.md",
+          "platform/**.md",
+          "platform/**/toc.yml",
+          "devices-page/**.md",
+          "devices-page/**/toc.yml",
           "whoami/whoami.md",
           "toc.yml",
           "*.md"

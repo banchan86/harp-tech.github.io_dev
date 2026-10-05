@@ -1,8 +1,9 @@
-- name: Multi-purpose Devices
-- name: Harp Behavior Board
-  href: harp-behavior.md
-- name: Harp Timestamp Generator Gen3
-  href: harp-timestamp-generator-gen3.md
-- name: Single-purpose Devices
-- name: Harp Sound Card
-  href: harp-soundcard.md
+- name: Registered Devices
+  href: whoami.md
+- name: Partners
+- name: Champalimaud Foundation
+  href: champalimaud.md
+- name: Allen Institute for Neural Dynamics
+  href: allen.md
+- name: Saintsbury Wellcome Center
+  href: swc.md
