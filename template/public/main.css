@@ -4,3 +4,10 @@
 [data-bs-theme=light] .display-dark {
     display: none;
 }
+
+/* Allow long URLs in table links to wrap so wide tables do not overflow
+   the page horizontally. Scoped to links only, so plain text columns keep
+   normal word wrapping and are not broken mid-word. */
+.table td a {
+    overflow-wrap: anywhere;
+}

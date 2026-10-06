@@ -1,9 +1,11 @@
 - name: Registered Devices
   href: whoami.md
-- name: Partners
-- name: Champalimaud Foundation
-  href: champalimaud.md
+- name: Authors
+- name: harp-tech
+  href: harp-tech.md
 - name: Allen Institute for Neural Dynamics
   href: allen.md
-- name: Saintsbury Wellcome Center
+- name: Neurogears
+  href: neurogears.md
+- name: Sainsbury Wellcome Center
   href: swc.md
