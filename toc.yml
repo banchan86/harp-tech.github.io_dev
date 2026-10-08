@@ -6,6 +6,7 @@
   href: devices-page/
 - name: Learn
   href: tutorials/
+- name: Connect
+  href: connect.md
 - name: About
   href: about.md
-  
