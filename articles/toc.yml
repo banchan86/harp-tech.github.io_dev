@@ -1,12 +1,6 @@
 - name: Introduction
 - href: ../index.md
 - href: motivation.md
-- name: Control Interface
+- name: Interface
 - href: operators.md
-- href: logging.md
-- href: message-manipulation.md
-- name: Data Interface
-- name: Python
-  href: python.md
-- name: Interfaces
 - href: python.md
