@@ -16,5 +16,6 @@
   href: core-atxmega.md
 - name: Pico
   href: core-pico.md
-- name: Toolkit
-  
+- name: Utilities
+- name: Harp Toolkit
+  href: toolkit.md
