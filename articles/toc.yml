@@ -1,6 +1,9 @@
-- name: Introduction
-- href: ../index.md
-- href: motivation.md
+- name: Getting Started
+- name: What is Harp
+  href: what-is-harp.md
+- href: how-harp-works.md
 - name: Interface
-- href: operators.md
-- href: python.md
+- name: Bonsai
+  href: operators.md
+- name: Python
+  href: python.md
