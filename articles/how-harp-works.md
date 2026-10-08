@@ -4,31 +4,28 @@ The Harp standard has two parts: a communication protocol that allows devices an
 
 ## Harp Communication Protocol
 
-A Harp device is controlled by a computer, which we call the controller. The device keeps its settings and readings in numbered slots called registers. Every exchange between the two is a short message that names a register and carries a value, called the payload.
+A Harp device is controlled by a computer, which we call the controller. The device keeps its settings and readings in numbered addresses called **registers**. Every exchange between the two is a short message that names a register and carries a value, called the **payload**.
 
 ::: harp-figure
-![Harp messages between a controller and a device](~/images/light-harp-messages.svg){.display-light}
-![Harp messages between a controller and a device](~/images/dark-harp-messages.svg){.display-dark}
+![Harp messages between a controller and a device](~/images/harp-messages.svg)
 
-Write and Read messages go from the controller to the device. Event messages come from the device on its own.
+Commands go from the controller to the device, and the device answers each one with a reply. Events come from the device on its own.
 :::
 
-There are three kinds of message:
+There are two kinds of command:
 
-- **Write** sets a register to a new value, for example starting a sound.
-- **Read** asks for the current value of a register, for example the state of the digital inputs.
-- **Event** is sent by the device on its own when something happens, for example when an input changes.
+- **Write** sets a register to a new value, for example a sound card device might have a register that start sound playback.
+- **Read** asks for the current value of a register, for example what is the state of the digital inputs.
 
-Every Write and Read is a command, and the device answers each one with a reply. The reply names the same register and carries its value after the command was handled, plus the time on the device's clock at that moment.
+The device answers every command with a reply. The reply names the same register and carries its value after the command was handled, plus the time on the device's clock at that moment.
 
 ::: harp-figure
-![A Write message and the device reply](~/images/light-harp-write-reply.svg){.display-light}
-![A Write message and the device reply](~/images/dark-harp-write-reply.svg){.display-dark}
+![Two commands and their replies](~/images/harp-command-reply.svg)
 
-A Write to the StartSound register at address 32 carries the sound index to play. The device replies with the same register and value, and adds the timestamp from its own clock.
+A Write to the StartSound register carries the sound index to play, and a Read of the DigitalInputs register only names the register. In both cases the device replies with the same register, its current value, and the timestamp from its own clock.
 :::
 
-Events carry a timestamp in the same way, so the timing of everything that happens is recorded on the device rather than on the computer.
+The third kind of message is an **Event**, which the device sends on its own when something happens, for example when an input changes. Events carry a timestamp in the same way as replies, so the timing of everything that happens is recorded on the device rather than on the computer.
 
 For the byte-level details, see the [Binary Protocol](../protocol/BinaryProtocol-8bit.md) specification.
 
@@ -37,8 +34,7 @@ For the byte-level details, see the [Binary Protocol](../protocol/BinaryProtocol
 Each device has its own clock, so two devices that saw the same event would normally record it with two unrelated timestamps. Harp solves this with a dedicated clock cable. One device, the Timestamp Generator, broadcasts the current time once per second, and every device connected to it aligns its clock to that time.
 
 ::: harp-figure
-![Device timelines without and with the synchronization clock](~/images/light-harp-clock.svg){.display-light}
-![Device timelines without and with the synchronization clock](~/images/dark-harp-clock.svg){.display-dark}
+![Device timelines without and with the synchronization clock](~/images/harp-clock.svg)
 
 Without a shared clock the same event is recorded at three unrelated times. With the synchronization clock every device records it at the same time.
 :::
