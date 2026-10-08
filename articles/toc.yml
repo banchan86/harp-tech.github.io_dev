@@ -2,7 +2,9 @@
 - name: What is Harp
   href: ../index.md
 - href: how-harp-works.md
-- name: Interface
+- name: Using Harp Devices
+- name: Apps
+  href: apps.md
 - name: Bonsai
   href: operators.md
 - name: Python
