@@ -3,9 +3,9 @@
 - name: Authors
 - name: harp-tech
   href: harp-tech.md
-- name: Allen Institute for Neural Dynamics
+- name: AllenNeuralDynamics
   href: allen.md
-- name: Neurogears
+- name: NeuroGEARS
   href: neurogears.md
-- name: Sainsbury Wellcome Center
-  href: swc.md
+- name: OEPS
+  href: oeps.md

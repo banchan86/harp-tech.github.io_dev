@@ -71,3 +71,38 @@
 .connect-discord > p:first-child > a::before {
     background: url(../images/logo-discord.svg) center / contain no-repeat;
 }
+
+/* Device grid: three-column photo listing used on author pages. Each card
+   is a photo, a linked device name, and a one-sentence description. */
+.device-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 767.98px) {
+    .device-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.device-card {
+    text-align: center;
+}
+
+.device-card p {
+    margin-bottom: 0.5rem;
+}
+
+.device-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    margin-bottom: 0.75rem;
+}
+
+.device-card > p:nth-child(2) > a {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
