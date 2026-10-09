@@ -16,4 +16,4 @@ This project includes four main packages:
 
  - **harp-data**: Reads logged register files into pandas DataFrames.
 
-For more information, check out the official package [documentation](https://github.com/harp-tech/python).
+For more information, check out the official package [documentation](https://harp-tech.org/python/).

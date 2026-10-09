@@ -1,8 +1,6 @@
-# How Harp Works
+# Communication Protocol
 
-The Harp standard has two parts: a communication protocol that allows devices and controllers to speak the same language, and a synchronization clock protocol that governs how device in a setup keep the same time.
-
-## Harp Communication Protocol
+The Harp standard has two parts: a communication protocol that allows devices and controllers to speak the same language, and a [synchronization clock](harp-synchronization-clock.md) protocol that governs how devices in a setup keep the same time. This article covers the communication protocol.
 
 A Harp device is controlled by a computer, which we call the controller. The device keeps its settings and readings in numbered addresses called **registers**. Every exchange between the two is a short message that names a register and carries a value, called the **payload**.
 
@@ -28,17 +26,3 @@ A Write to the StartSound register carries the sound index to play, and a Read o
 The third kind of message is an **Event**, which the device sends on its own when something happens, for example when an input changes. Events carry a timestamp in the same way as replies, so the timing of everything that happens is recorded on the device rather than on the computer.
 
 For the byte-level details, see the [Binary Protocol](../protocol/BinaryProtocol-8bit.md) specification.
-
-## Harp Synchronization Clock
-
-Each device has its own clock, so two devices that saw the same event would normally record it with two unrelated timestamps. Harp solves this with a dedicated clock cable. One device, the Timestamp Generator, broadcasts the current time once per second, and every device connected to it aligns its clock to that time.
-
-::: harp-figure
-![Device timelines without and with the synchronization clock](~/images/harp-clock.svg)
-
-Without a shared clock the same event is recorded at three unrelated times. With the synchronization clock every device records it at the same time.
-:::
-
-Once devices share the clock, their timestamps can be compared directly, with no alignment step afterwards. Devices stay synchronized to within tens of microseconds, and the clock cable is separate from the USB connection, so devices plugged into different computers still share the same time.
-
-For the electrical and timing details, see the [Synchronization Clock](../protocol/SynchronizationClock.md) specification.

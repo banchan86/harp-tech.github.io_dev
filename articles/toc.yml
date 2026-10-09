@@ -1,8 +1,12 @@
 - name: Getting Started
 - name: What is Harp
   href: ../index.md
-- href: how-harp-works.md
-- name: Using Harp Devices
+- name: Devices
+- name: harp-tech
+  href: harp-tech-devices.md
+- name: Registry
+  href: registered-devices.md
+- name: Software
 - name: Apps
   href: apps.md
 - name: Bonsai
