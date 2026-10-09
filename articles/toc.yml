@@ -1,10 +1,10 @@
 - name: Getting Started
 - name: What is Harp
   href: ../index.md
-- name: Devices
+- name: Hardware
 - name: harp-tech
   href: harp-tech-devices.md
-- name: Registry
+- name: Registered Devices
   href: registered-devices.md
 - name: Software
 - name: Apps
