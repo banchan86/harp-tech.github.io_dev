@@ -9,7 +9,7 @@ These devices are maintained by the harp-tech GitHub organization. All of them a
 
 [Harp Behavior](https://harp-tech.org/device.behavior/)
 
-The Harp Behavior device is a multi-purpose data acquisition and control device for behavioral neuroscience experiments.
+A multi-purpose data acquisition and control device for behavioral neuroscience experiments.
 :::
 
 ::: device-card
@@ -17,7 +17,7 @@ The Harp Behavior device is a multi-purpose data acquisition and control device 
 
 [Harp Sound Card](https://harp-tech.org/device.soundcard/)
 
-The Harp Sound Card is a high-fidelity audio device specifically designed for behavioral research experiments.
+A high-fidelity audio device specifically designed for auditory research experiments.
 :::
 
 ::: device-card
@@ -25,7 +25,7 @@ The Harp Sound Card is a high-fidelity audio device specifically designed for be
 
 [Harp Timestamp Generator Gen3](https://harp-tech.org/device.timestampgeneratorgen3/)
 
-The Harp Timestamp Generator Gen3 is a clock synchronization device for the Harp ecosystem.
+A clock synchronization device for the Harp ecosystem.
 :::
 
 ::: device-card
@@ -33,7 +33,7 @@ The Harp Timestamp Generator Gen3 is a clock synchronization device for the Harp
 
 [Harp Hobgoblin](https://harp-tech.org/device.hobgoblin/)
 
-The Harp Hobgoblin is a simple multi-purpose device for learning the basics of the Harp standard.
+A simple multi-purpose device for learning the basics of the Harp standard.
 :::
 
 ::::
