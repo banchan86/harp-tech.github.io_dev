@@ -28,4 +28,12 @@ The Harp Sound Card is a high-fidelity audio device specifically designed for be
 The Harp Timestamp Generator Gen3 is a clock synchronization device for the Harp ecosystem.
 :::
 
+::: device-card
+![Harp Hobgoblin](../images/device-hobgoblin-pico2.png)
+
+[Harp Hobgoblin](https://harp-tech.org/device.hobgoblin/)
+
+The Harp Hobgoblin is a simple multi-purpose device for learning the basics of the Harp standard.
+:::
+
 ::::
