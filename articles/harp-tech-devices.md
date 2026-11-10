@@ -9,7 +9,7 @@ These devices are maintained by the harp-tech GitHub organization. All of them a
 
 [Harp Behavior](https://harp-tech.org/device.behavior/)
 
-The Harp Behavior board is a multi-purpose data acquisition and control device for behavioral neuroscience experiments.
+The Harp Behavior device is a multi-purpose data acquisition and control device for behavioral neuroscience experiments.
 :::
 
 ::: device-card
